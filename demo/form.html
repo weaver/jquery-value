@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
+  </head>
+  <body>
+
+    <form>
+      <p class="field">
+	<label>To: (comma separated)</label>
+	<textarea name="to"></textarea>
+      </p>
+
+      <p class="field">
+	<label>Subject:</label>
+	<input type="text" name="subject" />
+      </p>
+
+      <div class="buttons">
+	<input type="submit" value="Submit" />
+      </div>
+    </form>
+
+    <pre id="value"></pre>
+
+    <script data-main="inputs" src="js/jquery-1.5.min.js"></script>
+    <script data-main="inputs" src="js/jquery-value.js"></script>
+    <script data-main="inputs" src="js/form.js"></script>
+  </body>
+</html>
