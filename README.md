@@ -65,6 +65,10 @@ Use this pseudo-selector to return the name of the first element in
 the matched set. The name may be taken from the `name` attribute or
 `data-name` attribute.
 
+**.findNamed(name)**
+
+Find elements named `name` within the current set of matched elements.
+
 **.val()**
 
 Get the value of the first element in the matched set.
