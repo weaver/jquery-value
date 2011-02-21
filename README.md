@@ -33,8 +33,8 @@ and added to the DOM like this:
 
 The `.val()` method can get the data:
 
-    // data is equal to myData
     var data = $("#target").children(':last-child').val();
+    // data is equal to myData
 
 Or it can be used to set the data. This automatically uses the
 template to update the DOM.
@@ -53,6 +53,17 @@ It can also be used to set all the values of a form at once:
     $('#myForm').formData({ name: 'value', ... });
 
 ## API ##
+
+**:named**
+
+Use this pseudo-selector to match elements with either a `name`
+attribute or a `data-name` attribute.
+
+**.name()**
+
+Use this pseudo-selector to return the name of the first element in
+the matched set. The name may be taken from the `name` attribute or
+`data-name` attribute.
 
 **.val()**
 
