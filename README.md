@@ -22,8 +22,8 @@ Add a value descriptor for any element using `.valueHook()`.
     });
 
 When `.value()` is called, jQuery will dispatch to your descriptor to
-get or set the element's value. **If no value hook is found, fall back
-on `.val()` and template data.**
+get or set the element's value. **If no value hook is found, it falls
+back to `.val()` or template data.**
 
     // Get the special value
     console.log('special value:', $('#special').value());
