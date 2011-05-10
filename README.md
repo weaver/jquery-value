@@ -1,10 +1,10 @@
 # jQuery Value #
 
 A jQuery plugin that `.value()`, an extensible version of
-`.val()`. This is very useful when using several complex javascript
-input widgets together.
+`.val()`.
 
-Features include:
+This plugin is very useful for building apps that use several complex
+javascript input widgets together. Features include:
 
   + Adds `.get()` and `.set()` hooks to any DOM element.
   + Falls back to `.val()`: safe to use anywhere you'd normally use `.val()`
