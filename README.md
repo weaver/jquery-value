@@ -6,10 +6,10 @@ A jQuery plugin that `.value()`, an extensible version of
 This plugin is very useful for building apps that use several complex
 javascript input widgets together. Features include:
 
-  + Adds `.get()` and `.set()` hooks to any DOM element.
+  + Adds `.get()` and `.set()` hooks to any DOM element
   + Falls back to `.val()`: safe to use anywhere you'd normally use `.val()`
-  + Integrates with jQuery Templates
-  + Getting or setting values of an entire form.
+  + jQuery templates integration
+  + Get or set all values in a form conveniently
   + Generalized names, supports `name` and `data-name`
 
 ## Value Methods ##
