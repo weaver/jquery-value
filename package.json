@@ -1,0 +1,6 @@
+{
+  "name": "jquery.value",
+  "description": "Adds .value(), an extensible version of .val()",
+  "version": "0.2.0",
+  "author": "Ben Weaver <ben@orangesoda.net>"
+}
