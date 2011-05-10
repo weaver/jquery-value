@@ -12,7 +12,8 @@ Add a value descriptor for any element using `.valueHook()`.
     });
 
 When `.value()` is called, jQuery will dispatch to your descriptor to
-get or set the element's value.
+get or set the element's value. **If no value hook is found, fall back
+on `.val()` and template data.**
 
     // Get the special value
     console.log('special value:', $('#special').value());
@@ -74,12 +75,6 @@ Get the value of the first element in the matched set.
 
 Set the value of all elements in the matched set to be `data`.
 
-**.valueHook({ ... })**
-
-Bind the value descriptor to elements in the matched set. Whenever
-`.value()` is called on these methods, it dispatches to the
-descriptor's `.get()` and `.set(data)` methods.
-
 **.values()**
 
 Find all named elements in the current context, reducing them to an
@@ -89,5 +84,11 @@ object of values.
 
 Set any named elements in the current context that have values given
 in `data`.
+
+**.valueHook({ ... })**
+
+Bind the value descriptor to elements in the matched set. Whenever
+`.value()` is called on these methods, it dispatches to the
+descriptor's `.get()` and `.set(data)` methods.
 
 [1]: http://api.jquery.com/category/plugins/templates/
