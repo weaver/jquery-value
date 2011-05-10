@@ -1,6 +1,16 @@
 # jQuery Value #
 
-A jQuery plugin that `.value()`, an extensible version of `.val()`.
+A jQuery plugin that `.value()`, an extensible version of
+`.val()`. This is very useful when using several complex javascript
+input widgets together.
+
+Features include:
+
+  + Adds `.get()` and `.set()` hooks to any DOM element.
+  + Falls back to `.val()`: safe to use anywhere you'd normally use `.val()`
+  + Integrates with jQuery Templates
+  + Getting or setting values of an entire form.
+  + Generalized names, supports `name` and `data-name`
 
 ## Value Methods ##
 
@@ -48,6 +58,17 @@ handy for making JSON requests.
 It can also be used to set all the values of a form at once:
 
     $('#myForm').values({ name: 'value', ... });
+
+## Names ##
+
+Use the `:named` pseudo-selector to find any elements with `name` or
+`data-name` attributes:
+
+    $('#myForm :named')
+
+To retrieve a specific input, add an argument to the pseudo-selector:
+
+    $('myForm :named(story)')
 
 ## API ##
 
